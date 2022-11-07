@@ -2,6 +2,7 @@ package com.example.yudbetfirsttargil;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -51,5 +52,9 @@ public class MainActivity extends AppCompatActivity {
 
         ImageView imageSubject = findViewById(R.id.imageSubject);
         imageSubject.setImageResource(R.drawable.image_phizio);
+    }
+    public void startTest (View view) {
+        Intent intent = new Intent(this, FirstQuestion.class);
+        startActivity(intent);
     }
 }
