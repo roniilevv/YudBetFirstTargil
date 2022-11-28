@@ -23,8 +23,73 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="שאלה ראשונה"
+        android:textColor="#121010"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/FirstQuestion_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="איך קוראים לעמדה שממנה מנתחים את התנועות?"
+        android:textColor="#070707"
+        android:textSize="20dp"
+        app:guidelineUseRtl="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/First_title" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FirstQuestion_TextView">
+
+
+        <RadioButton
+            android:id="@+id/first_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="אחלה עמדה" />
+
+        <RadioButton
+            android:id="@+id/second_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="עמדה אנטומית" />
+
+        <RadioButton
+            android:id="@+id/third_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="עמדה פיזיולוגית" />
+
+        <RadioButton
+            android:id="@+id/forth_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="עמדה פסיכולוגית" />
+
+    </RadioGroup>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
