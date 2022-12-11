@@ -45,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/First_title" />
 
     <RadioGroup
+        android:id="@+id/secondradiogroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -58,35 +59,31 @@
 
 
         <RadioButton
-            android:id="@+id/first_option"
+            android:id="@+id/first_option_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:onClick="onRadioButtonClicked"
             android:text="אחלה עמדה" />
 
         <RadioButton
-            android:id="@+id/second_option"
+            android:id="@+id/second_option_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:onClick="onRadioButtonClicked"
             android:text="עמדה אנטומית" />
 
         <RadioButton
-            android:id="@+id/third_option"
+            android:id="@+id/third_option_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:onClick="onRadioButtonClicked"
             android:text="עמדה פיזיולוגית" />
 
         <RadioButton
-            android:id="@+id/forth_option"
+            android:id="@+id/forth_option_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:onClick="onRadioButtonClicked"
             android:text="עמדה פסיכולוגית" />
 
     </RadioGroup>
